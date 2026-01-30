@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta de Cores Personalizada */
+  --color-background: #030014; /* Azul Profundo */
+  --color-surface: #111827;    /* Cinza Azulado */
+  --color-primary: #7C3AED;    /* Roxo Neon */
+  --color-secondary: #2563EB;  /* Azul Elétrico */
+  --color-accent: #F472B6;     /* Rosa Suave */
+
+  /* Fontes (Conectadas ao Next.js) */
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-space);
+
+  /* Animações Personalizadas */
+  --animate-float: float 6s ease-in-out infinite;
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+/* Estilos Globais */
+body {
+  background-color: var(--color-background);
+  color: #ffffff;
+  font-family: var(--font-sans);
+  overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+}
+
+/* Utilitários de Glow (Brilho) */
+.glow-primary {
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.3) 0%, rgba(0,0,0,0) 70%);
+}
+.glow-secondary {
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.3) 0%, rgba(0,0,0,0) 70%);
+}
