@@ -9,7 +9,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 # if using static export
-RUN npm run export
+# RUN npm run export
 
 
 # ---------- Nginx stage ----------
