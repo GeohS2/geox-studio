@@ -3,3 +3,5 @@ FROM nginx:alpine
 
 # Copy the static website files to the Nginx document root
 COPY . /usr/share/nginx/html
+
+RUN npm i && npm run build
