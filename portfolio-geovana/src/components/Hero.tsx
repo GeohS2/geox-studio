@@ -41,7 +41,8 @@ export default function Hero() {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mb-10 leading-relaxed"
                 >
-                    Somos um estúdio digital especializado em identidade visual para E-commerce e Landing Pages de alta performance.
+                    Criamos experiências visuais e digitais que posicionam marcas,
+                    aumentam conversões e elevam o valor percebido do seu negócio.
                 </motion.p>
 
                 <motion.div

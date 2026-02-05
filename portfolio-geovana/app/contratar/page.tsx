@@ -45,10 +45,10 @@ const PRICING_OPTIONS: Record<string, PricingPackage[]> = {
         }
     ],
     impressao: [
-        { id: "essencial", title: "Pacote Essencial (5 Artes)", price: 95, desc: "Ideal para começar. Sai a R$19/arte.", popular: false, images: ["/img/tabela-valores.jpg"] },
-        { id: "avancado", title: "Pacote Avançado (10 Artes)", price: 180, desc: "O mais pedido. Sai a R$18/arte.", popular: true, images: ["/img/tabela-valores.jpg"] },
-        { id: "profissional", title: "Profissional (15 Artes)", price: 255, desc: "Alta demanda. Sai a R$17/arte.", popular: false, images: ["/img/tabela-valores.jpg"] },
-        { id: "vip", title: "MENSALIDADE VIP (Ilimitado)", price: 1500, desc: "Sua agência particular. Artes ilimitadas todo mês.", popular: false, highlight: true, images: ["/img/vip-promo.jpg"] }
+        { id: "essencial", title: "Pacote Essencial (5 Artes)", price: 95, desc: "Ideal para começar. Sai a R$19/arte.", popular: false, images: ["/img/qualidade.png"] },
+        { id: "avancado", title: "Pacote Avançado (10 Artes)", price: 180, desc: "O mais pedido. Sai a R$18/arte.", popular: true, images: ["/img/qualidade.png"] },
+        { id: "profissional", title: "Profissional (15 Artes)", price: 255, desc: "Alta demanda. Sai a R$17/arte.", popular: false, images: ["/img/qualidade.png"] },
+        { id: "vip", title: "MENSALIDADE VIP (Ilimitado)", price: 1500, desc: "Sua agência particular. Artes ilimitadas todo mês.", popular: false, highlight: true, images: ["/img/qualidade.png"] }
     ],
     web: [
         { id: "lp", title: "Landing Page High-End", price: 600, desc: "Página de alta conversão, Copywriting incluso e Design Premium.", popular: true, images: ["/img/landingPage1.png", "/img/landingPage3.png", "/img/landingPage4.png"] },
