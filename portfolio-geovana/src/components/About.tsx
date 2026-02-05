@@ -41,34 +41,45 @@ export default function About() {
                         className="order-1 lg:order-2"
                     >
                         <div className="flex items-center gap-2 mb-4">
-                             <div className="w-8 h-[2px] bg-primary"></div>
-                             <span className="text-gray-400 text-sm uppercase tracking-widest">The GEOX Vision</span>
+                            <div className="w-8 h-[2px] bg-primary"></div>
+                            <span className="text-gray-400 text-sm uppercase tracking-widest">
+                                The GEOX Vision
+                            </span>
                         </div>
 
                         <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 leading-tight">
-                            Onde a Arte manual encontra a <br />
+                            Onde o Design estratégico encontra a <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">
                                 Tecnologia de Ponta.
                             </span>
                         </h2>
 
                         <p className="text-gray-400 text-lg mb-6 leading-relaxed">
-                            A <strong>GEOX</strong> nasceu da fusão entre a sensibilidade artística do desenho digital (Hand-drawn Design) e a precisão lógica do desenvolvimento web moderno.
+                            A <strong>GEOX</strong> é um estúdio criativo que une design autoral e desenvolvimento web
+                            para criar soluções visuais e digitais completas — do primeiro impacto visual à conversão final.
                         </p>
+
                         <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-                            Não somos apenas uma agência de "fazedores de sites". Somos estrategistas visuais. Entendemos que um design bonito sem conversão é apenas arte, e código sem alma não vende. Nós unimos os dois.
+                            Atuamos com artes para marketplaces, anúncios, identidade visual, materiais para impressão,
+                            landing pages e sites modernos. Não entregamos apenas estética ou código:
+                            criamos experiências pensadas para comunicar, vender e posicionar marcas.
                         </p>
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
                                 <MonitorPlay className="w-6 h-6 text-primary mb-2" />
-                                <h4 className="font-bold text-white mb-1">Tech Stack Moderna</h4>
-                                <p className="text-xs text-gray-400">Next.js, React & Tailwind.</p>
+                                <h4 className="font-bold text-white mb-1">Soluções Digitais Completas</h4>
+                                <p className="text-xs text-gray-400">
+                                    Artes, branding, landing pages e sites.
+                                </p>
                             </div>
+
                             <div className="p-4 rounded-xl bg-white/5 border border-white/5 hover:border-primary/30 transition-colors">
                                 <TrendingUp className="w-6 h-6 text-accent mb-2" />
-                                <h4 className="font-bold text-white mb-1">Design de Conversão</h4>
-                                <p className="text-xs text-gray-400">Foco em Vendas e Branding.</p>
+                                <h4 className="font-bold text-white mb-1">Design que Converte</h4>
+                                <p className="text-xs text-gray-400">
+                                    Foco em vendas, posicionamento e resultado.
+                                </p>
                             </div>
                         </div>
                     </motion.div>
