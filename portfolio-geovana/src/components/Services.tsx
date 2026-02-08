@@ -1,10 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Palette, Code2, ShoppingBag, Printer, Megaphone, Layout, ArrowRight } from "lucide-react";
+import { Palette, Code2, ShoppingBag, Printer, Megaphone, Layout, ArrowRight, Cpu, Zap } from "lucide-react";
 import Link from "next/link";
 
 const services = [
+    {
+        id: "software", 
+        title: "GEOX Automation",
+        description: "Software exclusivo para gráficas. Gere arquivos de impressão com sangria e corte em segundos. Adeus freelancer.",
+        icon: <Cpu className="w-8 h-8 text-purple-400" />,
+        features: ["Gerador Automático PDF", "Economia de R$ 700+/mês", "Sangria Espelhada", "Painel de Gestão"],
+        gradient: "from-purple-600/20 to-indigo-600/20", // Gradiente mais forte
+        border: "border-purple-500/50 hover:border-purple-400" // Borda já ativa ou destaque
+    },
     {
         id: "marketplace", // ID usado para direcionar o cliente
         title: "Kit Marketplace",

@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
     Check, Copy, CreditCard, ArrowRight, ArrowLeft, Send, 
-    ShoppingBag, Printer, Globe, Palette, Star, ChevronLeft, ChevronRight, Home 
+    ShoppingBag, Printer, Globe, Palette, Star, ChevronLeft, ChevronRight, Home, Cpu 
 } from "lucide-react";
 import Link from "next/link";
 
@@ -26,6 +26,33 @@ interface PricingPackage {
 
 // --- BANCO DE DADOS DE PACOTES E IMAGENS ---
 const PRICING_OPTIONS: Record<string, PricingPackage[]> = {
+    software: [
+        { 
+            id: "soft-pre", 
+            title: "Start (Pré-pago)", 
+            price: 50, 
+            desc: "Pacote de créditos para testar ou baixa demanda. Sem mensalidade.", 
+            popular: false,
+            images: ["/img/print-dashboard.png", "/img/print-upload.png"] // Use prints do software aqui
+        },
+        { 
+            id: "soft-basic", 
+            title: "Plano Basic", 
+            price: 199, 
+            desc: "Mensalidade para gráficas em crescimento. Até 1.500 gerações/mês.", 
+            popular: true,
+            images: ["/img/print-dashboard.png", "/img/print-config.png"]
+        },
+        { 
+            id: "soft-pro", 
+            title: "GEOX PRO (Ilimitado)", 
+            price: 399, 
+            desc: "Poder total. Gerações ilimitadas, prioridade e suporte VIP.", 
+            popular: false, 
+            highlight: true,
+            images: ["/img/print-dashboard.png", "/img/print-admin.png"]
+        }
+    ],
     marketplace: [
         { 
             id: "kit-shopee", 
@@ -169,6 +196,22 @@ ${answers.details || "Sem observações adicionais."}
                             <motion.div key="step1" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }} className="space-y-4">
                                 <p className="text-gray-300 mb-4">Selecione a área que você precisa de ajuda hoje:</p>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    
+                                    {/* BOTÃO ESPECIAL DO SOFTWARE (HARDCODED PARA DESTAQUE) */}
+                                    <button 
+                                        onClick={() => { setCategory("software"); nextStep(); }}
+                                        className="flex flex-col gap-3 p-5 rounded-2xl bg-gradient-to-br from-purple-900/40 to-black border border-purple-500/50 hover:border-purple-400 transition-all text-left group relative overflow-hidden"
+                                    >
+                                        <div className="absolute top-0 right-0 bg-purple-600 text-white text-[10px] font-bold px-3 py-1 rounded-bl-xl">NOVO</div>
+                                        <div className="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-400 group-hover:scale-110 transition-transform">
+                                            <Cpu />
+                                        </div>
+                                        <div>
+                                            <span className="font-bold text-lg text-white block">Software de Impressão</span>
+                                            <span className="text-xs text-gray-400">Automatize sua produção.</span>
+                                        </div>
+                                    </button>
+
                                     {[
                                         { id: "marketplace", icon: <ShoppingBag />, label: "Shopee & ML", desc: "Kits completos para vender mais." },
                                         { id: "impressao", icon: <Printer />, label: "Impressão", desc: "Faixas, quadros e outdoors." },

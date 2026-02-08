@@ -38,6 +38,15 @@ export default function Navbar() {
                             {link.name}
                         </a>
                     ))}
+
+                    <a 
+                        href="https://app.geox.art.br" // URL futura do software
+                        target="_blank"
+                        className="text-sm font-bold text-gray-300 hover:text-purple-400 transition-colors flex items-center gap-2"
+                    >
+                        Login Sistema
+                    </a>
+                    
                     <a 
                         href="https://wa.me/5535984431670"
                         target="_blank"
